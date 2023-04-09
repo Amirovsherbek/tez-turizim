@@ -1,0 +1,32 @@
+.dashboard-container{
+    width: 100%;
+    height: auto;
+    background-color: red;
+    display: flex;
+    flex-wrap: wrap;
+}
+.limit{
+    width: 100%;
+    height: 90px;
+    background-color: aquamarine;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.limit-card{
+    width:91px;
+    height: 90px;
+    background-color: red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.limit-card-image{
+    width: 36px;
+    height:26px;
+}
+.limit-card-title{
+    width: 100%;
+    height: 20px;
+    font-size: 12px;
+}

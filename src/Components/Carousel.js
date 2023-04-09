@@ -5,7 +5,7 @@ function Carousel() {
   const [activeSlideIndex, setActiveSlideIndex] = useState(0);
 
   return (
-    <div className="carousel-container" style={{marginTop:"-80px"}}>
+    <div className="carousel-container mx-auto " style={{marginTop:"-80px"}}>
       <ReactSimplyCarousel
         activeSlideIndex={activeSlideIndex}
         onRequestChange={setActiveSlideIndex}
