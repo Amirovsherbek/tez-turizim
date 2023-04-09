@@ -1,7 +1,9 @@
+import Carousel from "../Components/Carousel";
 function Dashboard(){
     return (
         <div>
-            Dashboard
+            <Carousel/>
+           
         </div>
     )
 }
