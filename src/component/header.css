@@ -62,10 +62,10 @@
 .header-navbar li:hover .dropdown_menu{
     display: block;
 }
-.header-navbar li:hover{
+/* .header-navbar li:hover{
     padding: 2px 4px ;
     background-color: #005ba5;
-}
+} */
 .header-navbar span{
     color: #fff200;
 }

@@ -16,7 +16,7 @@ function Header(){
                 <ul>
                     <li className="dc-t">Страны
                        <div className="dropdown-region">
-
+                        
                        </div>
                     </li>
                     <li className="dc-t">Туристам</li>
