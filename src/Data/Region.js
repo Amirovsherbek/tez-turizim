@@ -1,152 +1,211 @@
 export  const Region=[
     {
         Id:1,
-        region:”Беларусь”,
-        city:’Минск’
+        region:"Беларусь",
+        city:"Минск"
         },
         {
         Id:2,
-        region:”Болгария”,
-        city:’Варна’,
+        region:"Болгария",
+        city:"Варна",
         },
         {
         Id:3,
-        region:”Болгария”,
-        city:’Пловдив’,
+        region:"Болгария",
+        city:"Пловдив",
         },
         {
         Id:4,
-        region:”Болгария”,
-        city:’София’,
+        region:"Болгария",
+        city:"София",
         },
         {
         Id:5,
-        region:”Египет”,
-        city:’Каир’,
+        region:"Египет",
+        city:"Каир",
         },
         {
         Id:6,
-        region:”Казахстан”,
-        city:’Актау’,
+        region:"Казахстан",
+        city:"Актау",
         },
         {
         Id:7,
-        region:”Казахстан”,
-        city:’Актобе’,
+        region:"Казахстан",
+        city:"Актобе",
         },
         {
         Id:8,
-        region:”Казахстан”,
-        city:’Алматы’,
+        region:"Казахстан",
+        city:"Алматы",
         },
         {
         Id:9,
-        region:”Казахстан”,
-        city:’Астана’,
+        region:"Казахстан",
+        city:"Астана",
         },
         {
         Id:10,
-        region:”Казахстан”,
-        city:’Атырау’,
+        region:"Казахстан",
+        city:"Атырау",
         },
         {
         Id:11,
-        region:”Казахстан”,
-        city:’Караганды’,
+        region:"Казахстан",
+        city:"Караганды",
         },
         {
         Id:12,
-        region:”Казахстан”,
-        city:’Костанай’,
+        region:"Казахстан",
+        city:"Костанай",
         },
         {
         Id:13,
-        region:”Казахстан”,
-        city:’Усть-Каменогорск’
+        region:"Казахстан",
+        city:"Усть-Каменогорск"
         },
         {
         Id:14,
-        region:”Казахстан”,
-        city:’Шымкент’,
+        region:"Казахстан",
+        city:"Шымкент",
         },
         {
         Id:15,
-        region:”Киргизия”,
-        city:’Бишкек’,
+        region:"Киргизия",
+        city:"Бишкек",
         },
         {
         Id:16,
-        region:”Молдова”,
-        city:’Кишинев’,
+        region:"Молдова",
+        city:"Кишинев",
         },
         {
         Id:17,
-        region:”Россия”,
-        city:’Абакан’,
+        region:"Россия",
+        city:"Абакан",
         },
         {
         Id:18,
-        region:”Россия”,
-        city:’Архангельск’,
+        region:"Россия",
+        city:"Архангельск",
         },
         {
         Id:19,
-        region:”Россия”,
-        city:’Астрахань’,
+        region:"Россия",
+        city:"Астрахань",
         },
         {
         Id:20,
-        region:”Россия”,
-        city:’Барнаул’,
+        region:"Россия",
+        city:"Барнаул",
         },
         {
         Id:21,
-        region:”Россия”,
-        city:’Белгород’,
+        region:"Россия",
+        city:"Белгород",
         },
         {
         Id:22,
-        region:”Россия”,
-        city:’Владивосток’,
+        region:"Россия",
+        city:"Владивосток",
         },
         {
         Id:23,
-        region:”Россия”,
-        city:’Волгоград’,
+        region:"Россия",
+        city:"Волгоград",
         },
         {
         Id:24,
-        region:”Россия”,
-        city:’Воронеж’,
+        region:"Россия",
+        city:"Воронеж",
         },
         {
         Id:25,
-        region:”Россия”,
-        city:’Грозный’,
+        region:"Россия",
+        city:"Грозный",
         },
         {
         Id:26,
-        region:”Россия”,
-        city:’Екатеринбург’,
+        region:"Россия",
+        city:"Екатеринбург",
         },
         {
         Id:27,
-        region:”Россия”,
-        city:’Иркутск’,
+        region:"Россия",
+        city:"Иркутск",
         },
         {
         Id:28,
-        region:”Россия”,
-        city:’Казань’,
+        region:"Россия",
+        city:"Казань",
         },
         {
         Id:29,
-        region:”Россия”,
-        city:’Кемерово’,
+        region:"Россия",
+        city:"Кемерово",
         },
         {
         Id:30,
-        region:”Россия”,
-        city:’Краснодар’,
+        region:"Россия",
+        city:"Краснодар",
         },
+]
+export const RegionCarousel=[
+    {
+        id:1,
+        image:"https://s.tez-tour.com/banner/mainBig/2Cyprus_Summer_new23_1170x400_1__1068.jpg",
+        title:'kipr'
+    },
+    {
+        id:2,
+        image:"https://s.tez-tour.com/banner/mainBig/1Turkey-sum23_SouthWind_Yamal_1170x400_6122.jpg",
+        title:'turcey'
+    },
+    {
+        id:3,
+        image:"https://s.tez-tour.com/banner/mainBig/1170x400_1__5808.jpg",
+        title:'venusila'
+    },
+    {
+        id:4,
+        image:"https://s.tez-tour.com/banner/mainBig/UAE_ideal_vacation_v1_1170x400_9395.jpg",
+        title:'OEA'
+    },
+    {
+        id:5,
+        image:"https://s.tez-tour.com/banner/mainBig/1Turkey-sum23_SouthWind_Yamal_1170x400_6122.jpg",
+        title:'turcey'
+    },
+]
+export const cheapRegion=[
+    {
+        id:1,
+        image:'https://r.tez-tour.com/portal/images/country-bgr/1104.jpg',
+        title:'Турция',
+        price:'27 935 '
+    },
+    {
+        id:2,
+        image:'https://r.tez-tour.com/portal/images/country-bgr/1104.jpg',
+        title:'Египет',
+        price:'63 375 '
+    },
+    {
+        id:3,
+        image:'https://r.tez-tour.com/portal/images/country-bgr/1104.jpg',
+        title:'Шри-Ланка',
+        price:'64 643 '
+    },
+    {
+        id:4,
+        image:'https://r.tez-tour.com/portal/images/country-bgr/1104.jpg',
+        title:'Турция',
+        price:'27 935 '
+    },
+    {
+        id:5,
+        image:'https://r.tez-tour.com/portal/images/country-bgr/1104.jpg',
+        title:'Турция',
+        price:'27 935 '
+    },
 ]

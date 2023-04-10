@@ -1,32 +1,53 @@
 .dashboard-container{
     width: 100%;
     height: auto;
-    background-color: red;
     display: flex;
     flex-wrap: wrap;
+}
+.dashboard-container-box-one{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+    
 }
 .limit{
     width: 100%;
     height: 90px;
-    background-color: aquamarine;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
 }
 .limit-card{
     width:91px;
     height: 90px;
-    background-color: red;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    color:black;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+.limit-card:hover{
+    color:#fff200;
+    opacity: 0.8;
+    font-weight: 600;
+    transform: scale(1.1);
 }
 .limit-card-image{
-    width: 36px;
+    width: 100%;
     height:26px;
+    opacity: 0.6;
+    font-size: 28px;
 }
+
 .limit-card-title{
     width: 100%;
     height: 20px;
+    opacity: 0.8;
     font-size: 12px;
+}
+.dashboard-container-box-two{
+    background-color: #f8f8f8;
 }
