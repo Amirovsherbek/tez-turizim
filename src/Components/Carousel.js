@@ -8,10 +8,18 @@ const Carousel = () => {
   function Change(item){
     console.log("aa")
    if(item==="prev"){
-    if(currentImageIndex>=1){
-      setCurrentImageIndex(prev=>prev-1)
+    if(currentImageIndex>1){
+      console.log("dan "+currentImageIndex)
+      if(currentImageIndex!==0){
+        setCurrentImageIndex(prev=>prev-1)
+      }
+      
+    }
+    if(currentImageIndex===1){
+      setCurrentImageIndex(5)
     }
    }
+  
    if(item==="next"){
     if(currentImageIndex<5){
       setCurrentImageIndex(next=>next+1)

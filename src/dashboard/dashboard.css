@@ -130,8 +130,7 @@
     text-align: center;
 }
 .see_more div{
-
-        height: 43px;
+     height: 43px;
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
@@ -143,6 +142,7 @@
     border: 1px solid #005bbf;
     text-decoration: none;
     border-radius: 4px;
+    transition: all 0.2s ease-in-out;
 }
 .see_more div:hover{
     background-color: #005ba5;
@@ -152,7 +152,10 @@
 .dashboard-container-box-three{
     width: 100%;
     height: auto;
-    padding: 30px 0px;
+    text-align: center;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
     background-color: #fff;
 }
 .dashboard-container-box-three-box{
@@ -164,11 +167,67 @@
     justify-content: space-around;
 }
 .dashboard-container-box-three-box-card{
-    width: 33.3333%;
-    padding: 0 7px 23.5%;
+    width: 31%;
+    height: 238px;
+    padding: 0 0px ;
     float: left;
     overflow: visible;
     border-radius: 8px;
     overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
     background: #0055a6;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+.card_present_title1{
+    width: 100%;
+    height: auto;
+    padding:8px 12px;
+    font-weight: 900;
+    font-size: 1.5em;
+    color: #fff;
+    text-align: left;
+}
+.card_present_title2{
+    width: 100%;
+    height: auto;
+    padding: 2px ;
+    box-sizing: border-box;
+    font-size: 1.125em;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #fff;
+}
+.card_present_title{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card_present_image{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.card_present_image span{
+    margin-left: 95px;
+    transform: scale(10);
+    opacity: 0.7;
+    justify-content: flex-end;
+}
+.card_present_title2 span{
+    width: 100%;
+    height: auto;
+    padding: 2px 3px;
+    display: block;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #fff;
+}
+.dashboard-container-box-four{
+    
 }

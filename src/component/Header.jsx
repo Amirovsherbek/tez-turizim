@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import './header.css'
 import { IoLocationOutline } from "react-icons/io5";
-
+import { city } from "../Data/Region";
 function Header() {
     function Call() {
         window.location.href = 'tel:8 800 700 78 78';
@@ -15,9 +15,7 @@ function Header() {
             <div className="header-navbar ">
                 <ul className="header-navbar_ul">
                     <li className="dc-t header-navbar_li">Страны
-                        <div className="dropdown-region">
-
-                        </div>
+                        <div className="dropdown-region"></div>
                     </li>
                     <li className="dc-t header-navbar_li">Туристам
                         <div className="dropdown_menu">

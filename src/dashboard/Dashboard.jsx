@@ -1,12 +1,12 @@
 import Carousel from "../Components/Carousel";
-import { IoDiamondOutline, IoFootballOutline } from "react-icons/io5";
+import { IoDiamondOutline, IoFootballOutline, IoCalendarNumberOutline } from "react-icons/io5";
 import { NavLink } from "react-router-dom";
 import { TbShip, TbMountain, TbBuildingCastle, TbBeach } from "react-icons/tb";
 import { BsArrowThroughHeart } from "react-icons/bs";
-import { GiIsland } from "react-icons/gi";
+import { RxMoon } from "react-icons/rx";
+import { GiIsland, GiPresent } from "react-icons/gi";
 import './dashboard.css'
 import { cheapRegion } from "../Data/Region";
-import { sales } from "../Data/Data";
 function Dashboard() {
     const limit = [
         {
@@ -65,6 +65,29 @@ function Dashboard() {
             image: <IoDiamondOutline />
         }
     ]
+    const sales = [
+        {
+            id: 1,
+            title: 'Раннее  бронирование',
+            type: 'Экономьте',
+            sale_price: "до 65%",
+            icon: <IoCalendarNumberOutline />
+        },
+        {
+            id: 2,
+            title: 'Предложение  дня',
+            type: 'Воспользуйтесь',
+            sale_price: "сегодня",
+            icon: <RxMoon />
+        },
+        {
+            id: 3,
+            title: 'Подарки TEZ TOUR',
+            type: 'Подарите',
+            sale_price: "Отдых",
+            icon: <GiPresent />
+        },
+    ]
     return (
         <div className="dashboard-container text-center">
             <div className={'dashboard-container-box-one'}>
@@ -105,12 +128,23 @@ function Dashboard() {
             <div className="dashboard-container-box-three">
                 <div className="dashboard-container-box-three-box">
                     {
-                        sales.map(item => <div className="dashboard-container-box-three-box-card" key={item.id}>
-                              <div>{item.title}</div>
-                              <div>{item.type}</div>
-                              <div>{item.sale_price}</div>
+                        sales.map(item => <div className="dashboard-container-box-three-box-card mx-1" key={item.id}>
+                            <div className="card_present_title">
+                                <div className="card_present_title1">  {item.title}</div>
+                                <div className="card_present_title2 px-2">{item.type}<span>
+                                    {item.sale_price}</span></div>
+                            </div>
+                            <div className="card_present_image">
+                                <span> {item.icon}</span>
+                            </div>
                         </div>)
                     }
+                </div>
+            </div>
+            <div className={"dashboard-container-box-four"}>
+                <div className="dashboard-container-box-two-title my-3 ">
+                    Акции
+                    <span></span>
                 </div>
             </div>
         </div>
