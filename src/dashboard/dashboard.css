@@ -49,5 +49,126 @@
     font-size: 12px;
 }
 .dashboard-container-box-two{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     background-color: #f8f8f8;
+}
+.dashboard-container-box-cheap-region{
+    width: 90%;
+    height: auto;
+    padding-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.dashboard-container-box-two-title{
+    width: 90%;
+    padding-left: 20px;
+    font-size: 1.875em;
+    font-weight: 700;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    color: #1e1e1e;
+    text-align: left;
+}
+.dashboard-container-box-two-title span{
+    background: #8e8e8e;
+    width: 45px;
+    height: 3px;
+    display: block;
+    border-radius: 2px;
+    margin: 25px 0;
+}
+.cheap-card{
+    width: 328px;
+    height: 255px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.cheap-card-2{
+    width: 330px;
+    height: 258px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 50px 15px;
+    box-shadow: inset    0 -60px 60px  #005ba5 ;
+    transition: all 0.5s ease-in-out;
+}
+.cheap-card-2:hover{
+   transform: scale(1.05)   
+}
+.cheap-card-total-title-box{
+    width: 100%;
+    height: auto;
+}
+.cheap-card-title{
+    width: 100%;
+    text-align: left;
+    font-weight: 900;
+    color: #fff;
+    font-size: 1.5em;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+.cheap-card-price{
+    width: 100%;
+    text-align: left;
+    font-size: 1.25em;
+    font-weight: 900;
+    color: #fff;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+.see_more{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.see_more div{
+
+        height: 43px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #005bbf;
+    display: inline-block;
+    line-height: 43px;
+    cursor: pointer;
+    padding: 0px 20px;
+    border: 1px solid #005bbf;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.see_more div:hover{
+    background-color: #005ba5;
+    color:#fff;
+}
+
+.dashboard-container-box-three{
+    width: 100%;
+    height: auto;
+    padding: 30px 0px;
+    background-color: #fff;
+}
+.dashboard-container-box-three-box{
+    width: 90%;
+    height: auto;
+    padding: 10px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.dashboard-container-box-three-box-card{
+    width: 33.3333%;
+    padding: 0 7px 23.5%;
+    float: left;
+    overflow: visible;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #0055a6;
 }

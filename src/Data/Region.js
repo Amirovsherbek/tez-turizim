@@ -182,30 +182,30 @@ export const cheapRegion=[
         id:1,
         image:'https://r.tez-tour.com/portal/images/country-bgr/1104.jpg',
         title:'Турция',
-        price:'27 935 '
+        price:'27 935 ₽'
     },
     {
         id:2,
-        image:'https://r.tez-tour.com/portal/images/country-bgr/1104.jpg',
+        image:'https://r.tez-tour.com/portal/images/country-bgr/5732.jpg',
         title:'Египет',
-        price:'63 375 '
+        price:'63 375 ₽'
     },
     {
         id:3,
-        image:'https://r.tez-tour.com/portal/images/country-bgr/1104.jpg',
+        image:'https://r.tez-tour.com/portal/images/country-bgr/138865.jpg',
         title:'Шри-Ланка',
-        price:'64 643 '
+        price:'64 643 ₽'
     },
     {
         id:4,
-        image:'https://r.tez-tour.com/portal/images/country-bgr/1104.jpg',
-        title:'Турция',
-        price:'27 935 '
+        image:'https://r.tez-tour.com/portal/images/country-bgr/6030845.jpg',
+        title:'Сейшелы',
+        price:'96 663 ₽ '
     },
     {
         id:5,
-        image:'https://r.tez-tour.com/portal/images/country-bgr/1104.jpg',
-        title:'Турция',
-        price:'27 935 '
+        image:'https://r.tez-tour.com/portal/images/country-bgr/7067498.jpg',
+        title:'Греция',
+        price:'126 633 ₽'
     },
 ]

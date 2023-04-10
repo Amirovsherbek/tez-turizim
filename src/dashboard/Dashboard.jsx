@@ -1,10 +1,12 @@
 import Carousel from "../Components/Carousel";
-import { IoDiamondOutline,IoFootballOutline } from "react-icons/io5";
+import { IoDiamondOutline, IoFootballOutline } from "react-icons/io5";
 import { NavLink } from "react-router-dom";
-import { TbShip,TbMountain,TbBuildingCastle,TbBeach } from "react-icons/tb";
+import { TbShip, TbMountain, TbBuildingCastle, TbBeach } from "react-icons/tb";
 import { BsArrowThroughHeart } from "react-icons/bs";
 import { GiIsland } from "react-icons/gi";
 import './dashboard.css'
+import { cheapRegion } from "../Data/Region";
+import { sales } from "../Data/Data";
 function Dashboard() {
     const limit = [
         {
@@ -79,7 +81,37 @@ function Dashboard() {
                 </div>
             </div>
             <div className="dashboard-container-box-two">
-              
+                <div className="dashboard-container-box-two-title my-3 ">
+                    Лучшие предложения для отдыха
+                    <span></span>
+                </div>
+                <div className="dashboard-container-box-cheap-region">
+                    {
+                        cheapRegion.map(item => <div className="cheap-card mx-2 my-2 " >
+                            <div key={item.id} className="cheap-card-2 bg-dark" style={{ backgroundImage: `url(${item.image})` }}>
+                                <div className="cheap-card-total-title-box">
+                                    <div className="cheap-card-title mt-1 mx-2">{item.title}</div>
+                                    <div className="cheap-card-price mt-1 mx-2">{item.price}</div>
+                                </div>
+                            </div>
+                        </div>
+                        )
+                    }
+                </div>
+                <div className="see_more my-5">
+                    <div>Показать больше</div>
+                </div>
+            </div>
+            <div className="dashboard-container-box-three">
+                <div className="dashboard-container-box-three-box">
+                    {
+                        sales.map(item => <div className="dashboard-container-box-three-box-card" key={item.id}>
+                              <div>{item.title}</div>
+                              <div>{item.type}</div>
+                              <div>{item.sale_price}</div>
+                        </div>)
+                    }
+                </div>
             </div>
         </div>
     )

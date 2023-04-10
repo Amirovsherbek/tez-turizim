@@ -1,77 +1,41 @@
-import { useState } from "react";
-import ReactSimplyCarousel from "react-simply-carousel";
-import { GrFormNext,GrFormPrevious} from "react-icons/gr";
-import { RegionCarousel } from "../Data/Region";
-function Carousel() {
-  const [activeSlideIndex, setActiveSlideIndex] = useState(0);
+import React, { useEffect, useState } from 'react';
+import { RegionCarousel } from '../Data/Region';
+import { GrFormNext,GrFormPrevious } from "react-icons/gr";
 
+import "../Search/Search.css"
+const Carousel = () => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(1);
+  function Change(item){
+    console.log("aa")
+   if(item==="prev"){
+    if(currentImageIndex>=1){
+      setCurrentImageIndex(prev=>prev-1)
+    }
+   }
+   if(item==="next"){
+    if(currentImageIndex<5){
+      setCurrentImageIndex(next=>next+1)
+    }
+    else if(currentImageIndex===5){
+      setCurrentImageIndex(1)
+    }
+   }
+  }
+  console.log(currentImageIndex)
   return (
-    <div className="carousel-container mx-auto " style={{marginTop:"-80px"}}>
-      <ReactSimplyCarousel
-        activeSlideIndex={activeSlideIndex}
-        onRequestChange={setActiveSlideIndex}
-        itemsToShow={1}
-        itemsToScroll={1}
-        forwardBtnProps={{
-          //here you can also pass className, or any other button element attributes
-          style: {
-            alignSelf: "center",
-            background: "green",
-            border: "none",
-            borderRadius: "50%",
-            color: "#fff200",
-            cursor: "pointer",
-            fontSize: "29px",
-            height: 60,
-            lineHeight: 1,
-            textAlign: "center",
-            width: 60,
-            position:"absolute",
-            right:"8%",
-            
-          },
-          children: <span style={{color:"#fff200" }}><GrFormNext/></span>,
-        }}
-        backwardBtnProps={{
-          //here you can also pass className, or any other button element attributes
-          style: {
-            alignSelf: "center",
-            background: "red",
-            position:"absolute",
-            border: "none",
-            borderRadius: "50%",
-            color: "#fff200",
-            cursor: "pointer",
-            fontSize: "29px",
-            height: 60,
-            lineHeight: 1,
-            textAlign: "center",
-            width: 60,
-            
-            left:'5%'
-          },
-          children: <span className="next"><GrFormPrevious/></span>,
-        }}
-        responsiveProps={[
-          {
-            itemsToShow: 1,
-            itemsToScroll: 1,
-            minWidth: 768,
-            
-          },
-        ]}
-        speed={400}
-        easing="linear"
-      >
-        {
-          RegionCarousel.map(item=> <div  style={{ width: 1100, height: 369,position:"relative", borderRadius:"40px",overflow:"hidden"}}>
-          <img src={item.image} alt={item.title}/>
-        </div>)
-        }
-      
-      </ReactSimplyCarousel>
+    <div className='carousel-container '>
+      {
+        RegionCarousel.map(item=>{
+          if(currentImageIndex===item.id){
+            return ( <img className='mx-auto' key={item.id} src={item.image} alt={item.title}/>)
+          }
+        })
+      }
+
+      <button className=' changeBTN btn_prev' onClick={()=>Change("prev")}><GrFormPrevious/></button>
+      <button className=' changeBTN btn_next' onClick={()=>Change("next")}><GrFormNext/></button>
     </div>
   );
-}
+};
 
 export default Carousel;
