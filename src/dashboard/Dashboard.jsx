@@ -7,6 +7,7 @@ import { RxMoon } from "react-icons/rx";
 import { GiIsland, GiPresent } from "react-icons/gi";
 import './dashboard.css'
 import { cheapRegion } from "../Data/Region";
+import { Akisiya, Hotel, Spes, Conustalting } from "../Data/Data";
 function Dashboard() {
     const limit = [
         {
@@ -91,9 +92,9 @@ function Dashboard() {
     return (
         <div className="dashboard-container text-center">
             <div className={'dashboard-container-box-one'}>
-               <div className="dashboard-container-box-one-carousel">
-               <Carousels />
-               </div>
+                <div className="dashboard-container-box-one-carousel">
+                    <Carousels />
+                </div>
                 <div className="limit mx-auto mt-5" >
                     {
                         limit.map(item => <div key={item.id}>
@@ -144,10 +145,83 @@ function Dashboard() {
                 </div>
             </div>
             <div className={"dashboard-container-box-four"}>
-                <div className="dashboard-container-box-two-title my-3 ">
+                <div className="dashboard-container-box-two-title my-3 mx-2">
                     Акции
                     <span></span>
                 </div>
+                <div className="bonus_cards">
+                    {
+                        Akisiya.map(item => <div key={item.id} className="bonus_box_card mx-2">
+                            <div className="bonus_box_image ">
+                                <img src={item.image} alt={item.title} />
+                            </div>
+                            <div className="bonus_box_title">
+                                {item.title}
+                            </div>
+
+                        </div>)
+                    }
+                </div>
+            </div>
+            <div className="dashboard-container-box-five ">
+                <div className="dashboard-container-box-two-title my-3 ">
+                    Хиты продаж
+                    <span></span>
+                </div>
+                <div className="dashboard-container-box-cheap-region pb-5">
+                    {
+                        Hotel.map(item => <div className="cheap-card mx-2 my-2 " >
+                            <div key={item.id} className="cheap-card-2 bg-dark" style={{ backgroundImage: `url(${item.image})` }}>
+                                <div className="cheap-card-total-title-box">
+                                    <div className="aksiya-card-title mt-1 mx-2">{item.title}</div>
+                                    <div className="aksiya-card-title2 mt-1 mx-2">{item.title2}</div>
+                                    <div className="aksiya-card-price mt-1 mx-2">{item.price}</div>
+                                </div>
+                            </div>
+                        </div>
+                        )
+                    }
+                </div>
+
+            </div>
+            <div className={"dashboard-container-box-four"}>
+                <div className="dashboard-container-box-two-title my-3 mx-2">
+                    Специальные предложения
+                    <span></span>
+                </div>
+                <div className="bonus_cards">
+                    {
+                        Spes.map(item => <div key={item.id} className="bonus_box_card mx-2">
+                            <div className="spes_box_image ">
+                                <img src={item.image} alt={item.title} />
+                            </div>
+                            <div className="spes_box_title">
+                                <div>{item.title}</div>
+                                <div>{item.title2}</div>
+                            </div>
+
+                        </div>)
+                    }
+                </div>
+            </div>
+            <div className={"dashboard-container-box-six"}>
+            {
+                    Conustalting.map(item => 
+                        <div key={item.id} className="cons_box_card mx-1 my-1">
+                            <div className="cons_box_card_image"><img src={item.image} alt={item.title} /></div>
+                            <div className="cons_box_card_them">
+                                <div>{item.title}</div>
+                                <div>{item.page}</div>
+                            </div>
+                        </div>
+                    )
+                }
+            </div>
+            <div className="dashboard-container-box-seven">
+                <div>Лучшие предложения!</div>
+                <div>УНИКАЛЬНЫЕ ПРЕДЛОЖЕНИЯ ТОЛЬКО ДЛЯ ИЗБРАННЫХ ПУТЕШЕСТВЕННИКОВ. СТАНЬТЕ ОДНИМ ИЗ НИХ!</div>
+                <span></span>
+                <div><input type="text"/></div>
             </div>
         </div>
     )
