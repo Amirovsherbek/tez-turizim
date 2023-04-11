@@ -220,8 +220,13 @@ function Dashboard() {
             <div className="dashboard-container-box-seven">
                 <div>Лучшие предложения!</div>
                 <div>УНИКАЛЬНЫЕ ПРЕДЛОЖЕНИЯ ТОЛЬКО ДЛЯ ИЗБРАННЫХ ПУТЕШЕСТВЕННИКОВ. СТАНЬТЕ ОДНИМ ИЗ НИХ!</div>
-                <span></span>
-                <div><input type="text"/></div>
+                <div id={'id'}><span className="dashboard-container-box-seven_span"></span></div>
+                <div className="user">
+                    <input type="text"/>
+                    <input type="email"/>
+                    <button className="btn">podpitatsiya</button>
+                </div>
+                <div><input defaultChecked={true} type="checkbox"/><span>Разрешаю обрабатывать мои персональные данные в соответствии с указанной целью их обработки. Политика конфиденциальности</span></div>
             </div>
         </div>
     )
