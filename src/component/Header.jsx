@@ -20,24 +20,24 @@ function Header() {
                     <li className="dc-t header-navbar_li">Туристам
                         <div className="dropdown_menu">
                             <div>
-                                <p className="dropdown_li px-2">Bilet olish</p>
-                                <p className="dropdown_li px-2">Bilet agentligi</p>
+                                <span className="dropdown_li px-2">Bilet olish</span>
+                                <span className="dropdown_li px-2">Bilet agentligi</span>
                             </div>
                         </div>
                     </li>
                     <li className="dc-t header-navbar_li">Агентствам
                         <div className="dropdown_menu">
                             <div>
-                                <p className="dropdown_li px-2">Bilet olish</p>
-                                <p className="dropdown_li px-2">Bilet agentligi</p>
+                            <span className="dropdown_li px-2">Bilet olish</span>
+                                <span className="dropdown_li px-2">Bilet agentligi</span>
                             </div>
                         </div>
                     </li>
                     <li className="dc-t header-navbar_li">где купить
                         <div className="dropdown_menu">
                             <div>
-                                <p className="dropdown_li px-2">Bilet olish</p>
-                                <p className="dropdown_li px-2">Bilet agentligi</p>
+                            <span className="dropdown_li px-2">Bilet olish</span>
+                                <span className="dropdown_li px-2">Bilet agentligi</span>
                             </div>
                         </div>
                     </li>

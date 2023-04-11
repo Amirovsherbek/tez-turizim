@@ -1,4 +1,4 @@
-import Carousel from "../Components/Carousel";
+import Carousels from "../Components/Carousel";
 import { IoDiamondOutline, IoFootballOutline, IoCalendarNumberOutline } from "react-icons/io5";
 import { NavLink } from "react-router-dom";
 import { TbShip, TbMountain, TbBuildingCastle, TbBeach } from "react-icons/tb";
@@ -91,7 +91,9 @@ function Dashboard() {
     return (
         <div className="dashboard-container text-center">
             <div className={'dashboard-container-box-one'}>
-                <Carousel />
+               <div className="dashboard-container-box-one-carousel">
+               <Carousels />
+               </div>
                 <div className="limit mx-auto mt-5" >
                     {
                         limit.map(item => <div key={item.id}>

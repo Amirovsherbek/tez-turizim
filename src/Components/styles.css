@@ -1,0 +1,25 @@
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 60px;
+    border: none;
+    background-color: transparent;
+    font-size: 2rem;
+    outline: none;
+    z-index: 2;
+  }
+  
+  .carousel-button-prev {
+    left: 0;
+    background-color: red;
+  }
+  
+  .carousel-button-next {
+    right: 0;
+  }
+  
+  .carousel-button-icon {
+    color: white;
+  }

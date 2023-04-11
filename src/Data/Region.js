@@ -208,6 +208,12 @@ export const cheapRegion=[
         title:'Греция',
         price:'126 633 ₽'
     },
+    {
+        id:5,
+        image:'https://r.tez-tour.com/portal/images/country-bgr/166775.jpg',
+        title:'Мальдивы',
+        price:'143 735 ₽'
+    },
 ]
 export const city=[
     {

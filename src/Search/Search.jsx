@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import "./Search.css";
+import { Region } from "../Data/Region";
 function Search() {
   return (
     <div className="search ">
@@ -23,11 +24,11 @@ function Search() {
       </div>
       <div className="search-box mt-1 ">
         <select className="form-control">
-          <option>a</option>
-          <option>a</option>
-          <option>a</option>
-          <option>a</option>
-          <option>a</option>
+          {
+            Region.map(item=>
+              <option>{item.city}</option>
+              )
+          }
         </select>
         <select className="form-control">
           <option>a</option>

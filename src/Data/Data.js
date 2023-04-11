@@ -18,3 +18,10 @@ export  const sales=[
         sale_price:"Отдых"
      },
 ]
+export const AKisiya=[
+   {
+      id:1,
+      image:'https://s.tez-tour.com/article/17954/BIG_BUS_7686_6761_9008.jpg',
+      title:'Египет. Трансфер комфорт+ в подарок!'
+   }
+]
