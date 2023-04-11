@@ -1,6 +1,7 @@
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import { GrFormNext,GrFormPrevious } from "react-icons/gr";
 import './styles.css';
 import { RegionCarousel } from '../Data/Region';
 const Carousels = ({ items }) => {
@@ -19,7 +20,7 @@ const Carousels = ({ items }) => {
             title={label}
             className="carousel-button carousel-button-prev"
           >
-            <i className="carousel-button-icon fas fa-chevron-left"></i>
+            <i className="carousel-button-icon fas fa-chevron-left"><GrFormPrevious/></i>
           </button>
         )
       }
@@ -31,7 +32,7 @@ const Carousels = ({ items }) => {
             title={label}
             className="carousel-button carousel-button-next"
           >
-            <i className="carousel-button-icon fas fa-chevron-right"></i>
+            <i className="carousel-button-icon fas fa-chevron-right"><GrFormNext/></i>
           </button>
         )
       }
